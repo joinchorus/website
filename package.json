@@ -1,0 +1,10 @@
+{
+  "name": "chorus-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chorus Marketing Website & Manifesto — joinchorus.app",
+  "scripts": {
+    "build": "echo 'Build complete (static HTML/CSS assets)'",
+    "serve": "npx serve public"
+  }
+}
