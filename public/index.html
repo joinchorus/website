@@ -145,6 +145,52 @@
       border-color: var(--border-default);
     }
 
+    .mobile-menu-toggle {
+      display: none;
+      background: transparent;
+      border: 1px solid var(--border-default);
+      color: var(--text-primary);
+      padding: 0.5rem;
+      border-radius: 6px;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media (max-width: 768px) {
+      .mobile-menu-toggle {
+        display: inline-flex;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--bg-surface);
+        border-bottom: 1px solid var(--border-default);
+        padding: 1.5rem 1.25rem;
+        gap: 1.25rem;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links a {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+      }
+
+      .btn-cta {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
     .btn-cta {
       background-color: var(--text-primary);
       color: var(--bg-main) !important;
@@ -486,6 +532,15 @@
   <header>
     <div class="container nav-inner">
       <a href="https://joinchorus.app" class="logo">Chorus</a>
+      
+      <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
+
       <nav class="nav-links">
         <a href="#problem">Manifesto</a>
         <a href="#difference">The Difference</a>
@@ -693,6 +748,22 @@
         localStorage.setItem('chorus_theme', currentTheme);
         updateThemeUI(currentTheme);
       });
+
+      // Mobile Menu Toggle
+      const mobileToggle = document.getElementById('mobile-menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      if (mobileToggle && navLinks) {
+        mobileToggle.addEventListener('click', function() {
+          navLinks.classList.toggle('active');
+          const isOpen = navLinks.classList.contains('active');
+          mobileToggle.setAttribute('aria-expanded', isOpen);
+        });
+        navLinks.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            navLinks.classList.remove('active');
+          });
+        });
+      }
 
       // Adapt CTA links dynamically when testing locally on custom ports/IPs
       const port = window.location.port ? ':' + window.location.port : '';
