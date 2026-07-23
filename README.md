@@ -1,6 +1,6 @@
 # Chorus — Marketing Website & Manifesto
 
-[![Website CI/CD](https://github.com/chorus-project/website/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/chorus-project/website/actions/workflows/ci-cd.yml)
+[![Website CI/CD](https://github.com/joinchorus/website/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/joinchorus/website/actions/workflows/ci-cd.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Official landing page, manifesto, feature showcase, and philosophy for Chorus ([joinchorus.app](https://joinchorus.app)).
@@ -11,7 +11,7 @@ Official landing page, manifesto, feature showcase, and philosophy for Chorus ([
 
 - 📖 **Documentation Portal:** [docs.joinchorus.app](https://docs.joinchorus.app)
 - 💬 **Launch Application:** [chat.joinchorus.app](https://chat.joinchorus.app)
-- 💻 **Application Repository:** [chorus-project/chorus](https://github.com/chorus-project/chorus)
+- 💻 **Application Repository:** [joinchorus/chorus](https://github.com/joinchorus/chorus)
 
 ---
 
@@ -19,19 +19,13 @@ Official landing page, manifesto, feature showcase, and philosophy for Chorus ([
 
 This repository hosts the static marketing website and product manifesto for Chorus. Built with high-craft, editorial HTML/CSS following Apple Human Interface Guidelines and Linear design aesthetics.
 
-### Features Included:
-- **Product Manifesto:** Explaining zero accounts, thread-scoped identities, and chronological reading.
-- **Architectural Difference:** Interactive SVG diagrams demonstrating Chorus vs traditional social networks.
-- **Dark & Light Mode:** Native CSS variable theme switching.
-- **SEO & Social Metadata:** Pre-rendered OpenGraph tags and semantic HTML.
-
 ---
 
 ## 🛠️ Local Development
 
 ```bash
 # Clone the repository
-git clone https://github.com/chorus-project/website.git
+git clone https://github.com/joinchorus/website.git
 cd website
 
 # Serve locally
