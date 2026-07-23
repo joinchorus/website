@@ -27,7 +27,7 @@ jobs:
   deploy_firebase_hosting:
     name: Deploy to Firebase Hosting (joinchorus.app)
     needs: build_and_verify
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push' && secrets.FIREBASE_SERVICE_ACCOUNT_CHORUS_WEBSITE != ''
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
