@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="568" viewBox="0 0 1200 568" role="img" aria-labelledby="t d">
+  <title id="t">How Chorus works: four steps</title>
+  <desc id="d">Four steps from the Chorus site: start a conversation, receive a conversation name, talk, and leave, after which the temporary name disappears.</desc>
+  <style>
+    .bg{fill:#ffffff}.panel{fill:#f9fafb}.bd{stroke:#eaecf0}
+    .tx{fill:#111827}.t2{fill:#4b5563}.ac{fill:#58a6ff}
+    .sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+    @media (prefers-color-scheme:dark){
+      .bg{fill:#121417}.panel{fill:#1a1d21}.bd{stroke:#30363d}
+      .tx{fill:#e6edf3}.t2{fill:#9198a1}
+    }
+  </style>
+  <rect class="bg bd" x="1" y="1" width="1198" height="566" rx="20" stroke-width="2"/>
+  <text class="sans t2" x="64" y="76" font-size="22" font-weight="600" letter-spacing="1">HOW CHORUS WORKS</text>
+  <text class="sans tx" x="64" y="124" font-size="44" font-weight="800" letter-spacing="-1.5">Four steps to a calm discussion.</text>
+  <g class="sans">
+    <g transform="translate(64 160)">
+      <rect class="panel bd" width="1072" height="76" rx="14" stroke-width="2"/>
+      <text class="ac" x="28" y="50" font-size="30" font-weight="800">01</text>
+      <text class="tx" x="100" y="34" font-size="26" font-weight="700">Start a conversation.</text>
+      <text class="t2" x="100" y="62" font-size="20">Open a new discussion thread or join an existing ongoing topic.</text>
+    </g>
+    <g transform="translate(64 252)">
+      <rect class="panel bd" width="1072" height="76" rx="14" stroke-width="2"/>
+      <text class="ac" x="28" y="50" font-size="30" font-weight="800">02</text>
+      <text class="tx" x="100" y="34" font-size="26" font-weight="700">Receive a conversation name.</text>
+      <text class="t2" x="100" y="62" font-size="20">An ephemeral, thread-scoped temporary identity, such as Ash or River.</text>
+    </g>
+    <g transform="translate(64 344)">
+      <rect class="panel bd" width="1072" height="76" rx="14" stroke-width="2"/>
+      <text class="ac" x="28" y="50" font-size="30" font-weight="800">03</text>
+      <text class="tx" x="100" y="34" font-size="26" font-weight="700">Talk.</text>
+      <text class="t2" x="100" y="62" font-size="20">Focus purely on the dialogue, without reputation baggage or follower clout.</text>
+    </g>
+    <g transform="translate(64 436)">
+      <rect class="panel bd" width="1072" height="76" rx="14" stroke-width="2"/>
+      <text class="ac" x="28" y="50" font-size="30" font-weight="800">04</text>
+      <text class="tx" x="100" y="34" font-size="26" font-weight="700">Leave.</text>
+      <text class="t2" x="100" y="62" font-size="20">When you step away, your temporary name disappears forever.</text>
+    </g>
+  </g>
+</svg>
